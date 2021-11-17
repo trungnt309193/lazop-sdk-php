@@ -1,10 +1,10 @@
 # PHP Library for the Lazada Open API
 Usage of this library is also available at [Lazada Open API](https://open.lazada.com)
 
-Requirements
+Version
 -----
 
-Version 0.1
+Version 2.1.0
 
 Requirements
 -----
