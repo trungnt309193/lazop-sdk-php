@@ -4,6 +4,11 @@ Usage of this library is also available at [Lazada Open API](https://open.lazada
 Requirements
 -----
 
+Version 0.1
+
+Requirements
+-----
+
 PHP SDK requires PHP 5 or newer version
 
 Composer Installation
