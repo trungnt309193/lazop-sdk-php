@@ -298,7 +298,20 @@ class LazopClient
 	{
 		$localIp = isset($_SERVER["SERVER_ADDR"]) ? $_SERVER["SERVER_ADDR"] : "CLI";
 		$logger = new LazopLogger;
-		$logger->conf["log_file"] = rtrim(LAZOP_SDK_WORK_DIR, '\\/') . '/' . "logs/lazopsdk.log." . date("Y-m-d");
+		//Check log location symfony 2
+        $logDir = __DIR__ . "/../../../../app/logs/";
+        if(!is_dir($logDir)) {
+            //check log location for laravel storage/logs
+            $logDir = __DIR__ . "/../../../../storage/logs/";
+            if(!is_dir($logDir)) {
+                //write logs system linux
+                $logDir = '/var/log/';
+                if(!file_exists($logDir)) {
+                    mkdir($logDir, 0777, true);
+                }
+            }
+        }
+		$logger->conf["log_file"] = $logDir . "lazopsdk.log." . date("Y-m-d");
 		$logger->conf["separator"] = "^_^";
 		$logData = array(
 		date("Y-m-d H:i:s"),
