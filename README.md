@@ -4,7 +4,7 @@ Usage of this library is also available at [Lazada Open API](https://open.lazada
 Version
 -----
 
-Version 2.2.0
+Version 2.4.0
 
 Requirements
 -----
