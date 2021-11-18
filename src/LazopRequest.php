@@ -1,6 +1,6 @@
 <?php
 
-namespace trungnt309193\PHPLazadaSDK;
+namespace Lazada;
 
 class LazopRequest
 {

@@ -1,18 +1,25 @@
 {
-    "name": "trungnt309193/lazop-sdk-php",
-    "description": "Lazada Open API PHP SDK",
-    "type": "library",
+    "name": "trungnt309193/lazada-sdk-php",
+    "description": "A Lazada PHP SDK for Laravel",
+    "keywords": [
+        "lazada",
+        "lazop"
+    ],
+    "homepage": "https://github.com/trungnt309193/lazada-php-sdk",
     "license": "MIT",
     "authors": [
         {
             "name": "Nguyễn Trọng Trung",
-            "email": "trungnt309193@gmail.com"
+            "email": "trungnt30993@gmail.com",
+            "homepage": "https://www.trungnt.dev",
+            "role": "Developer"
         }
     ],
-    "require": {},
+    "require": {
+    },
     "autoload": {
         "psr-4": {
-            "trungnt309193\\PHPLazadaSDK\\": "src/"
+            "Lazada\\": "src"
         }
     }
 }

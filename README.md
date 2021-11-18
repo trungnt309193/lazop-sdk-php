@@ -4,7 +4,7 @@ Usage of this library is also available at [Lazada Open API](https://open.lazada
 Version
 -----
 
-Version 2.1.0
+Version 2.2.0
 
 Requirements
 -----
@@ -24,8 +24,8 @@ Usage
 
 Sample usage:
 ```php
-use trungnt309193\PHPLazadaSDK\LazopClient;
-use trungnt309193\PHPLazadaSDK\LazopRequest;
+use trungnt309193\Lazada\LazopClient;
+use trungnt309193\Lazada\LazopRequest;
 
 ...
 $c = new LazopClient('https://api.lazada.test/rest', '${appKey}', '${appSecret}');
